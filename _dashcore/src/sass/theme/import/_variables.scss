@@ -1,0 +1,45 @@
+// Font
+$bubbles-horizontal-min-height:           460px !default;
+$navbar-min-height:                       90px !default;
+
+// [ NAVIGATION ]
+
+$navbar-fixed-top-background-color: transparent !default;
+$navbar-fixed-text-color: var(--#{$prefix}body-color) !default;
+$navbar-fixed-text-color-hover: $white !default;
+$navbar-sticky-background-color: var(--#{$prefix}tertiary-bg) !default;
+$navbar-sticky-text-color: var(--#{$prefix}body-color) !default;
+$navbar-float-breakpoint: lg !default;
+
+$navbar-text-color-dark: var(--#{$prefix}body-color) !default;
+
+$nav-pills-light-link-color: var(--#{$prefix}body-color) !default;
+$nav-pills-light-link-active-bg: var(--#{$prefix}tertiary-bg) !default;
+$nav-pills-light-link-active-color: var(--#{$prefix}secondary-color) !default;
+$nav-pills-light-link-active-shadow-bg: var(--#{$prefix}tertiary-bg-rgb) !default;
+$nav-pills-light-border-color: var(--#{$prefix}border-color) !default;
+
+// Mega-animated menu navigation
+$st-link-color: $color-primary !default; // $color-1-dark-2x
+$st-link-color-hover: $color-primary !default; // $color-1-dark-2x
+$st-dropdown-item-hover-color: var(--#{$prefix}secondary-bg) !default;
+$st-dropdown-bg-color: var(--#{$prefix}tertiary-bg) !default;
+$st-dropdown-shadow-color: $color-dark !default; //$color-4-dark-5x
+$st-alt-bg-color: var(--#{$prefix}secondary-bg) !default;
+$st-dropdown-arrow-shadow-color: $gray-700 !default;
+$st-link-title-color: $color-dark !default;
+
+// Match these with the one in js file
+$st-dropdown-initial-width: 520px !default;
+$st-dropdown-initial-height: 400px !default;
+
+// Custom Utilities Maps
+
+$utilities-text-gradient-colors: (
+  "primary": linear-gradient(351deg, $color-info 23%, $indigo 87%, $indigo-400 102%),
+  "success": linear-gradient(351deg, $color-info 23%, $green 87%, $green-400 102%),
+  "warning": linear-gradient(351deg, $color-warning 23%, $orange 87%, $orange-400 102%),
+) !default;
+
+$padding-default:                   60px !default;
+$section-padding:                   $padding-default * 1.5 !default;

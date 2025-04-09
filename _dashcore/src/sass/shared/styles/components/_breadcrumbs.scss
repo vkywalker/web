@@ -1,0 +1,11 @@
+.breadcrumb {
+  --#{$prefix}breadcrumb-font-weight: #{$breadcrumb-font-weight};
+
+  font-weight: var(--#{$prefix}breadcrumb-font-weight);
+}
+
+.breadcrumb-item {
+  &.active {
+    font-weight: $font-weight-normal;
+  }
+}

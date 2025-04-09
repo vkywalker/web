@@ -1,0 +1,22 @@
+.off-left-background {
+  background-position: 20px 20px;
+  background-size: 60px;
+
+  @include media-breakpoint-up($grid-float-breakpoint) {
+    background-position: -60px 100%;
+    background-size: 50%;
+
+    &:hover {
+      background-position: -30px 100%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-position: -60px 20px;
+    background-size: contain;
+
+    &:hover {
+      background-position: -30px 0px;
+    }
+  }
+}

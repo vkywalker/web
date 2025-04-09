@@ -1,0 +1,19 @@
+@use 'sass:math';
+
+.header-includes-carousel {
+  .container {
+    padding-top: $features-carousel-container-padding !important;
+    padding-bottom: math.div($features-carousel-container-padding, 2) !important;
+
+    // try md
+    @include media-breakpoint-up(lg) {
+      padding-bottom: $features-carousel-container-padding !important;
+    }
+  }
+}
+
+.features-carousel {
+  .logo {
+    max-height: 28px;
+  }
+}

@@ -1,0 +1,204 @@
+@use 'sass:math';
+
+// Import the theme palette to enable the colors when overriding
+@import "../palette";
+
+// Bootstrap variables
+//
+// Override Bootstrap variables here to suite your theme.
+// Copy variables you want to customize from node_modules/bootstrap/scss/_variables.scss
+
+// Prefix for :root CSS variables
+$prefix:                          dc- !default;
+
+// Color system
+$primary:                         $color-primary !default;
+$secondary:                       $color-secondary !default;
+$success:                         $color-success !default;
+$info:                            $color-info !default;
+$warning:                         $color-warning !default;
+$danger:                          $color-danger !default;
+$light:                           $color-light !default;
+$dark:                            $color-dark !default;
+$darker:                          $almost-black !default;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "darker":     $darker,
+  "black":      $black
+) !default;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-negative-margins:         true !default;
+$enable-dark-mode:                true !default;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-color:                      $gray-700 !default;
+$body-secondary-bg:               $gray-200 !default;
+$body-tertiary-color:             $gray-300 !default;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+$border-color:                    $gray-300 !default;
+$input-btn-focus-box-shadow:      none !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                              $gray-600 !default;
+$link-decoration:                         none !default;
+$link-hover-color:                        $primary !default;
+
+// Spacing
+$spacer:                          1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 8,
+  9: $spacer * 9,
+  10: $spacer * 10,
+  11: $spacer * 11,
+  12: $spacer * 12,
+  13: $spacer * 13,
+  14: $spacer * 14,
+  15: $spacer * 15
+) !default;
+
+// Position
+
+// scss-docs-start position-map
+$position-values: (
+  0: 0,
+  5: 5%,
+  10: 10%,
+  15: 15%,
+  20: 20%,
+  25: 25%,
+  30: 30%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+) !default;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif:          'Poppins', sans-serif !default;
+
+$font-size-base:                  1rem !default;
+$font-size-xs:                    $font-size-base * .75 !default;
+$font-size-sm:                    $font-size-base * .875 !default;
+$font-size-lg:                    $font-size-base * 1.125 !default;
+$font-size-xl:                    $font-size-base * 1.25 !default;
+
+$font-weight-lighter:             100 !default;
+$font-weight-light:               300 !default;
+$font-weight-normal:              400 !default;
+$font-weight-semibold:            600 !default;
+$font-weight-bold:                700 !default;
+$font-weight-bolder:              900 !default;
+
+$font-weight-base:                  $font-weight-light !default;
+
+// Nav
+$navbar-color:                      $white !default;
+$navbar-sticky-color:               $black !default;
+
+$navbar-padding-y:                  0 !default;
+$navbar-nav-link-padding-x:         .875rem !default;
+
+$nav-link-font-weight:              $font-weight-semibold !default;
+$nav-link-padding-y:                $spacer !default;
+$navbar-light-toggler-border-color: transparent !default;
+
+$navbar-light-color:                rgba(var(--#{$prefix}navbar-color-rgb), .7) !default;
+$navbar-light-hover-color:          rgba(var(--#{$prefix}navbar-color-rgb), 1) !default;
+
+// not part of bootstrap
+$navbar-light-sticky-color:         rgba(var(--#{$prefix}navbar-sticky-color-rgb), .7) !default;
+$navbar-light-sticky-hover-color:   rgba(var(--#{$prefix}navbar-sticky-color-rgb), 1) !default;
+
+// Card
+
+$card-spacer-y:                     $spacer * 1.25 !default;
+$card-spacer-x:                     $spacer * 1.25 !default;
+$card-bg:                           var(--#{$prefix}panel-bg) !default;
+$card-border-radius:                var(--#{$prefix}border-radius-lg) !default;
+
+// Input
+
+$input-btn-padding-y:                       .625rem !default;
+$input-btn-padding-x:                       1.75rem !default;
+$input-btn-font-size:                       $font-size-sm !default;
+$input-btn-focus-width:                     0 !default;
+
+$input-btn-padding-y-sm:                    .475rem !default;
+$input-btn-padding-x-sm:                    1.25rem !default;
+$input-btn-font-size-sm:                    $font-size-xs !default;
+
+$input-btn-padding-y-lg:                    .785rem !default;
+$input-btn-padding-x-lg:                    2rem !default;
+$input-btn-font-size-lg:                    $font-size-base !default;
+
+// Headings
+
+$headings-color:                            $darker !default;
+
+// Buttons
+
+$btn-font-weight:                           $font-weight-semibold !default;
+
+// Accordion
+
+$accordion-bg:                            var(--#{$prefix}body-bg) !default;
+$accordion-button-active-bg:              $accordion-bg !default;
+
+
+// List group
+
+// scss-docs-start list-group-variables
+$list-group-bg:                           transparent !default;
+
+// Breadcrumbs
+
+$breadcrumb-font-size:                    $font-size-sm !default;
+$breadcrumb-divider:                      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E") !default;
+
+// Z-index master list
+//
+$zindex-levels: (
+  n1: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  7: 7,
+  8: 8,
+  9: 9,
+  99: 99
+) !default;

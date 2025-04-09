@@ -1,0 +1,45 @@
+$appheader-container-padding: 12rem;
+
+.app-landing-header {
+  .container {
+    @include media-breakpoint-up($grid-float-breakpoint) {
+      padding-bottom: $appheader-container-padding;
+    }
+  }
+
+  .background-shape {
+    z-index: 0;
+  }
+
+  .background-shape-main {
+    bottom: 0;
+    height: 200%;
+    transform-origin: 0 100%;
+    transform: translate(65%, -20%) rotate(-60deg);
+    position: absolute;
+
+    @include media-breakpoint-up($grid-float-breakpoint) {
+      transform: translate(50%, 0) rotate(-60deg);
+    }
+
+    @include media-breakpoint-up(lg) {
+      transform: translate(45%, 0) rotate(-60deg);
+    }
+
+    @include media-breakpoint-up(xl) {
+      //width: 100%;
+    }
+  }
+
+  .background-shape-top {
+    transform-origin: 0 100%;
+    transform: translate(80%, -60%) rotate(-60deg);
+    left: 50%;
+  }
+
+  .iphone-x {
+    @include media-breakpoint-up(xl) {
+      @include iphone-x-size(.85);
+    }
+  }
+}

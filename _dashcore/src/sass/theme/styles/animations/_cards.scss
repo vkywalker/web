@@ -1,0 +1,11 @@
+.send-and-receive {
+  .off-left-background {
+    @include media-breakpoint-up($grid-float-breakpoint) {
+      background-position: -30px 20px;
+
+      &:hover {
+        background-position: -10px 0px;
+      }
+    }
+  }
+}

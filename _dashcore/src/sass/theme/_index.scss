@@ -1,0 +1,69 @@
+@use 'sass:math';
+
+$selector-bg: #edf1f2;
+$selector-header-bg: #442d65;
+$selector-font-color: #a0a0a0;
+$selector-font-color-hover: darken($selector-font-color, 70%);
+$selector-title-color: #f98a5f;
+$selector-border-color: darken($selector-bg, 8%);
+$selector-width: 350px;
+$count-down-padding: math.div($padding-default, 2);
+
+.preview-pane {
+  padding: 0;
+  height: 320px;
+  text-align: center;
+
+  .preview-page {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+
+    img {
+      width: 100%;
+      display: block;
+      margin-top: 0;
+    }
+  }
+}
+
+.card-demo {
+  .card-body {
+    z-index: 1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.03);
+  }
+
+  .is-new {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+}
+
+.count-down {
+  padding-top: $count-down-padding;
+  padding-bottom: $count-down-padding;
+
+  li {
+    padding: 0 (math.div($padding-default, 2)) 0;
+  }
+
+  span {
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+    display: block;
+  }
+
+  p {
+    margin-top: 0;
+    font-weight: $font-weight-light;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    span {
+      font-size: $font-size-extra-large;
+    }
+  }
+}

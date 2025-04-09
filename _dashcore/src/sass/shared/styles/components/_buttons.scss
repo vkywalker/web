@@ -1,0 +1,36 @@
+@if $enable-dark-mode {
+  @include color-mode(dark, true) {
+    .btn-outline-secondary {
+      --#{$prefix}btn-color: rgba(#{to-rgb($light)}, .85);
+      --#{$prefix}btn-hover-color: #{$gray-800};
+      --#{$prefix}btn-active-color: #{$gray-800};
+      --#{$prefix}btn-border-color: rgba(#{to-rgb($light)}, .25);
+      --#{$prefix}btn-hover-bg: #{$light};
+      --#{$prefix}btn-active-bg: #{$light};
+    }
+
+    .btn-secondary {
+      --#{$prefix}btn-color: rgba(#{to-rgb($light)}, .85);
+      --#{$prefix}btn-hover-color: #{$light};
+      --#{$prefix}btn-active-color: #{$light};
+      --#{$prefix}btn-border-color: transparent;
+      --#{$prefix}btn-hover-border-color: transparent;
+      --#{$prefix}btn-active-border-color: transparent;
+      --#{$prefix}btn-bg: rgba(#{to-rgb($light)}, .06);
+      --#{$prefix}btn-hover-bg: rgba(#{to-rgb($light)}, .12);
+      --#{$prefix}btn-active-bg: rgba(#{to-rgb($light)}, .12);
+      --#{$prefix}btn-disabled-bg: rgba(#{to-rgb($light)}, .05);
+      --#{$prefix}btn-disabled-border-color: transparent;
+    }
+  }
+}
+
+@each $name, $color in $brand-colors {
+  .btn-#{$name} {
+    @include button-variant($color, $color);
+  }
+
+  .btn-outline-#{$name} {
+    @include button-outline-variant($color);
+  }
+}

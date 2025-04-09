@@ -1,0 +1,115 @@
+.swiper-container {
+  .swiper-pagination-top {
+    bottom: auto;
+    top: 0;
+  }
+}
+
+.swiper-pagination {
+  &.highlight-active {
+    .swiper-pagination-bullet {
+      will-change: width;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .swiper-pagination-bullet-active {
+      width: 18px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.swiper-container-rtl {
+  .swiper-button {
+    &-prev,
+    &-next {
+      &:after {
+        content: none !important;
+      }
+    }
+  }
+}
+
+.swiper-button {
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  &-prev,
+  &-next {
+    &:after {
+      content: none !important;
+    }
+  }
+
+  &.rounded-circle {
+    background-image: none;
+    background-color: var(--#{$prefix}panel-bg); //$white;
+    width: 3rem;
+    height: 3rem;
+    outline: none;
+    @include center-flex();
+  }
+}
+
+.swiper-nav-thumbs {
+  .nav-link {
+    padding: 0.5rem 0.75rem;
+
+    .thumb {
+      @include icon-size($font-size-medium);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &.active {
+      .thumb {
+        transform: scale(1.75);
+      }
+    }
+  }
+}
+
+.swiper-center-nav {
+  position: relative;
+
+  .swiper-button {
+    transition: all 0.3s ease-in-out;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include media-breakpoint-up($grid-float-breakpoint) {
+      transform: translateY(0);
+    }
+
+    &:hover {
+      background-color: $color-primary;
+      color: $white;
+    }
+
+    &-prev {
+      left: 0;
+
+      @include media-breakpoint-up($grid-float-breakpoint) {
+        transform: translateX(-50%);
+
+        &:hover {
+          transform: translate(-50%, -2px);
+        }
+      }
+    }
+
+    &-next {
+      right: 0;
+
+      @include media-breakpoint-up($grid-float-breakpoint) {
+        transform: translateX(50%);
+        &:hover {
+          transform: translate(50%, -2px);
+        }
+      }
+    }
+  }
+}

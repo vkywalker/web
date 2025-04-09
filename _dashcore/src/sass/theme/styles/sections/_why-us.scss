@@ -1,0 +1,35 @@
+.why-us {
+  .background-shape-main {
+    max-width: 50%;
+
+    &.end-50 {
+      transform: rotate(45deg) translate(100%, -100%);
+    }
+
+    &.start-50 {
+      transform: rotate(45deg) translate(-100%, 100%);
+    }
+  }
+}
+
+// TODO: create a generic component for this
+.why-icon-list {
+  &:before {
+    content: "";
+    width: 1px;
+    border: 1px dashed $why-us-icon-list-border-color;
+    position: absolute;
+    bottom: 80px;
+    top: 50px;
+    left: 50px;
+    z-index: -1;
+  }
+
+  .list-item {
+    margin-bottom: 4rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

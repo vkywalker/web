@@ -1,0 +1,17 @@
+:root,
+[data-bs-theme="light"] {
+  --#{$prefix}panel-bg: #{$body-bg};
+
+  // navbar
+  --#{$prefix}navbar-color-rgb: #{to-rgb($navbar-color)};
+  --#{$prefix}navbar-sticky-color-rgb: #{to-rgb($black)};
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark, true) {
+    --#{$prefix}panel-bg: #{$card-bg-dark};
+
+    // navbar
+    --#{$prefix}navbar-sticky-color-rgb: #{to-rgb($white)};
+  }
+}

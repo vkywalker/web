@@ -1,0 +1,36 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    'shadow': merge-utility(
+      map-get($utilities, "shadow"),
+      (
+        'primary': $box-shadow-primary,
+        'secondary': $box-shadow-secondary,
+        'info': $box-shadow-info,
+        'success': $box-shadow-success,
+        'warning': $box-shadow-warning,
+        'danger': $box-shadow-danger,
+        'dark': $box-shadow-dark
+      )
+    ),
+
+    'full-screen': (
+      responsive: true,
+      property: min-height,
+      class: full,
+      values: (
+        "screen": 100vh
+      ),
+    ),
+
+    "text-gradient": (
+      property: background-image,
+      class: text-gradient,
+      values: $utilities-text-gradient-colors
+    )
+  )
+);
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+// scss-docs-end import-stack

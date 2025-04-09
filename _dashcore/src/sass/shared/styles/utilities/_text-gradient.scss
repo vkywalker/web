@@ -1,0 +1,7 @@
+// See src/assets/sass/shared/import/bs/_maps to modify the gradients map
+
+.text-gradient {
+  //padding-right: 0.05em;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

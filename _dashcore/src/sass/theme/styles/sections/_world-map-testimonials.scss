@@ -1,0 +1,47 @@
+.world-map-testimonials {
+  .shapes-container {
+    z-index: 1;
+  }
+
+  .shape {
+    position: absolute;
+
+    &-triangle {
+      left: 0;
+      top: 0;
+      transform: translate(25%, 200%) rotate(90deg);
+
+      div {
+        @include triangle-variant(200px, $color-primary, $color-primary);
+      }
+
+      @include media-breakpoint-up($grid-float-breakpoint) {
+        transform: translate(25%, 25%) rotate(90deg);
+
+        div {
+          @include triangle-variant(480px, $color-primary, $color-primary);
+        }
+      }
+    }
+  }
+}
+
+.user-reviews {
+  min-height: 450px;
+  position: relative;
+
+  .user {
+    width: 48px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &.active {
+      transform: scale(1.5);
+
+      img {
+        box-shadow: 0 0 5px 10px rgba($dark, 0.05) !important;
+        padding: 2px;
+      }
+    }
+  }
+}

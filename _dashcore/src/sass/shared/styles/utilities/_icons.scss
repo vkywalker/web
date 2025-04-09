@@ -1,0 +1,75 @@
+.icon {
+  margin-left: 5px;
+  margin-right: 15px;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+
+  i {
+    margin: 0;
+  }
+}
+
+.logo {
+  max-height: 50px;
+}
+
+img {
+  &.icon {
+    max-width: 54px;
+  }
+}
+
+.icon-sm {
+  @include icon-size($font-size-small);
+}
+.icon-md {
+  @include icon-size($font-size-medium);
+}
+.icon-lg {
+  @include icon-size($font-size-large);
+}
+.icon-xl {
+  @include icon-size($font-size-extra-large);
+}
+.icon-xxl {
+  @include icon-size($font-size-xx-large);
+}
+.icon-l {
+  @include icon-size($font-size-lg);
+}
+
+.icon-2l {
+  @include icon-size($font-size-lg * 2);
+}
+.icon-2xl {
+  @include icon-size($font-size-extra-large * 2);
+}
+.icon-2xxl {
+  @include icon-size($font-size-xx-large * 2);
+}
+
+@each $i, $color in $theme-colors {
+  .stroke-#{$i} {
+    stroke: $color;
+  }
+}
+
+.icon-shape {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .shape,
+  .shape-lg { max-width: $font-size-large; }
+
+  .shape-xl { max-width: $font-size-extra-large; }
+
+  .shape-xxl { max-width: $font-size-xx-large; }
+
+  .icon {
+    margin: 0;
+  }
+}

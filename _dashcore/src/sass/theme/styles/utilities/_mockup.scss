@@ -1,0 +1,55 @@
+.mockup-wrapper {
+  position: relative;
+}
+
+.mockup {
+  position: relative;
+  margin: 0 auto;
+  max-width: 255px;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.cutout {
+  position: relative;
+
+  &.bottom-right {
+    @include angled-edge("inside bottom", "upper right", $cutout-color, 30, null, true);
+  }
+
+  &.bottom-left {
+    @include angled-edge("inside bottom", "upper left", $cutout-color, 30, null, true);
+  }
+
+  &.x2 {
+    &.bottom-right {
+      @include angled-edge("inside bottom", "upper right", $cutout-color, 60, null, true);
+    }
+
+    &.bottom-left {
+      @include angled-edge("inside bottom", "upper left", $cutout-color, 60, null, true);
+    }
+  }
+
+  &:after {
+    background-color: $cutout-color;
+  }
+
+  &-md {
+    position: relative;
+
+    @include media-breakpoint-up($grid-float-breakpoint) {
+      &.bottom-right {
+        @include angled-edge("inside bottom", "upper right", $cutout-color, 30, null, true);
+      }
+
+      &.bottom-left {
+        @include angled-edge("inside bottom", "upper left", $cutout-color, 30, null, true);
+      }
+    }
+  }
+}

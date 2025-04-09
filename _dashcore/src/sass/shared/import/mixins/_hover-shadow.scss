@@ -1,0 +1,5 @@
+@mixin hover-shadow($shadow, $blur: 10px, $opacity: 0.4) {
+  &:hover {
+    box-shadow: -1px 3px $blur 0 rgba($shadow, $opacity) !important;
+  }
+}

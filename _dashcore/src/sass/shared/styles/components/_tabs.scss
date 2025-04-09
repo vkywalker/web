@@ -1,0 +1,56 @@
+.nav-tabs {
+  &.tabs-clean {
+    .nav-link {
+      border-color: transparent;
+
+      .icon {
+        transform: scale(0.95);
+        transition: transform 0.3s linear;
+        margin: auto;
+      }
+
+      &.active {
+        background-color: transparent !important;
+        border-bottom-color: $nav-tab-active-border-color;
+
+        .icon {
+          transform: scale(1.25);
+        }
+      }
+    }
+  }
+
+  &.tabs-bordered {
+    .nav-link {
+      &.active {
+        border-top: 2px solid $nav-tab-active-border-color;
+      }
+    }
+  }
+
+  @include media-breakpoint-up($grid-float-breakpoint) {
+    &.nav-slide {
+      + .tab-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: hidden;
+
+        > .tab-pane {
+          transform: translateX(100%);
+          transition: transform 0.4s ease-in-out;
+          margin-right: -100%;
+          display: block;
+          opacity: 0;
+          flex: 1;
+
+          &.active {
+            transform: translateX(0);
+            opacity: 1;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.slider-testimonials {
+  .swiper-button {
+    &-prev {
+      top: 100%;
+
+      @include media-breakpoint-up($grid-float-breakpoint) {
+        top: 50%;
+      }
+    }
+
+    &-next {
+      top: 0;
+
+      @include media-breakpoint-up($grid-float-breakpoint) {
+        top: 50%;
+      }
+    }
+  }
+
+  [class^="col"] {
+    position: relative;
+  }
+
+  .image-background {
+    max-height: 500px;
+    border-top-right-radius: 0!important;
+
+    @include media-breakpoint-up($grid-float-breakpoint) {
+      max-height: 600px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-height: 520px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      max-height: 500px;
+    }
+  }
+
+  .card-body {
+    padding: 4rem 2.5rem;
+  }
+
+  .divider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transform-origin: 100% 0;
+    transform: rotate(-75deg);
+    background-color: var(--#{$prefix}card-bg);
+    height: 150px;
+    display: none;
+
+    @include media-breakpoint-up($grid-float-breakpoint) {
+      width: 200%;
+      display: block;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 150%;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@function merge-utility($map, $values) {
+  @return map-merge(
+    $map,
+    (
+      values: map-merge(
+        map-get($map, "values"),
+        $values
+      ),
+    ),
+  );
+}

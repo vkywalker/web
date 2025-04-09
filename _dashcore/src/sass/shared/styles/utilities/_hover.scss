@@ -1,0 +1,19 @@
+.no-action {
+  pointer-events: none;
+}
+
+.hover {
+  &-lift {
+    transform: translateY(0);
+    transition: all .4s ease-in-out;
+
+    &:hover {
+      transform:translateY(-10px);
+    }
+  }
+
+  &-shadow {
+    transition: all 0.3s ease-in-out;
+    @include hover-shadow(#000, 15px, 0.075);
+  }
+}

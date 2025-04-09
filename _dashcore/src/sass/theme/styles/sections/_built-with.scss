@@ -1,0 +1,19 @@
+.built-with {
+  .shape {
+    position: absolute;
+
+    &-circle {
+      top: 0;
+      left: 0;
+
+      div {
+        transform: translate(-50%, -10%);
+        @include circle-variant(400px, $color-primary);
+      }
+    }
+  }
+
+  .mockup {
+    max-width: 100px;
+  }
+}

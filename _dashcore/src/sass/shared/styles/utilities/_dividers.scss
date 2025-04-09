@@ -1,0 +1,55 @@
+.shape {
+  &-divider {
+    position: absolute;
+    pointer-events: none;
+
+    &-bottom {
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      > * {
+        transform-origin: top center;
+      }
+
+      @include media-breakpoint-up($grid-float-breakpoint) {
+        transform: scale(1);
+      }
+    }
+
+    &-fluid-x > * {
+      width: 100%;
+      height: auto;
+    }
+
+    &-fluid-y > * {
+      width: auto;
+      height: 100%;
+    }
+
+    // all direct children should be svg elements
+    svg {
+      fill: currentColor;
+      transform: scale(2);
+    }
+
+    &-curve {
+      //transform: scale(2);
+    }
+
+    &-waves {
+      svg {
+        left: 0;
+        transform: rotate3d(0,1,0,180deg);
+        width: calc(159% + 1.3px);
+        height: 133px;
+      }
+    }
+  }
+}
+
+.overlay {
+  .shape-divider {
+    z-index: 1;
+  }
+}

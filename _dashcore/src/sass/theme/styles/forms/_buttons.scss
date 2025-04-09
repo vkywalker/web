@@ -1,0 +1,17 @@
+.btn-download {
+  min-width: 200px;
+  text-align: left;
+  display: flex !important;
+  align-items: center;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.45;
+  }
+
+  .small {
+    margin-top: -2px;
+    display: block;
+  }
+}

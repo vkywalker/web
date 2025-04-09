@@ -1,0 +1,6 @@
+.accordion-button {
+  &:not(.collapsed) {
+    box-shadow: none;
+    font-weight: $font-weight-bold;
+  }
+}

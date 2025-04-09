@@ -1,0 +1,173 @@
+// App Landing 2 page
+
+$app-landing-2-shapes-count: length($app-landing-2-shapes-map) !default;
+$app-landing-2--ring-1-width: 4px !default;
+$app-landing-2--ring-1-color: $white !default;
+
+$app-landing-2--ring-2-width: 1px !default;
+$app-landing-2--ring-2-color: $white !default;
+
+// Shape Ring Big
+
+$path-success-shape-ring-border-color: var(--#{$prefix}secondary-bg) !default;
+
+// Safety-first
+
+$safety-circle-bg-color: var(--#{$prefix}tertiary-bg) !default;
+$safety-ring-bg-color: $gray-200 !default;
+$safety-dots-bg-color: var(--#{$prefix}secondary-bg) !default;
+
+// Discover-crete-love App
+
+$wplu--circle1-bg-color: $color-warning !default;
+$wplu--circle2-bg-color: rgba($color-warning, 0.8) !default;
+$wplu--circle3-bg-color: $color-warning !default;
+$wplu--circle4-bg-color: $color-primary !default;
+$wplu--triangle-bg-color: $color-primary !default;
+$wplu--triangle2-bg-color: $color-primary !default;
+$wplu--pattern-dots: var(--#{$prefix}secondary-bg) !default;
+
+$features-carousel-container-padding: 12rem !default;
+
+// Automate Marketing
+
+$automate-marketing-shape-main-bg-color: $color-primary !default;
+$automate-marketing-shape-main-shadow: rgba($color-secondary, 0.15) !default;
+$automate-marketing-animations-map: (
+  (
+    bottom: 45,
+    left: 2,
+    animation-duration: 10
+  ),
+  (
+    bottom: 40,
+    left: 12,
+    animation-duration: 6.7
+  ),
+  (
+    bottom: 56,
+    left: 14,
+    animation-duration: 8.8
+  ),
+  (
+    bottom: 51,
+    left: 20,
+    animation-duration: 6.8
+  ),
+  (
+    bottom: 65,
+    left: 30,
+    animation-duration: 9.5
+  ),
+  (
+    bottom: 44,
+    left: 30,
+    animation-duration: 8.7
+  ),
+  (
+    bottom: 80,
+    left: 40,
+    animation-duration: 7.5
+  ),
+  (
+    bottom: 55,
+    left: 38,
+    animation-duration: 10
+  ),
+  (
+    bottom: 50,
+    left: 1,
+    animation-duration: 6.4
+  ),
+  (
+    bottom: 55,
+    left: 12,
+    animation-duration: 8.2
+  ),
+  (
+    bottom: 60,
+    left: 14,
+    animation-duration: 6.4
+  ),
+  (
+    bottom: 60,
+    left: 18,
+    animation-duration: 7.8
+  ),
+  (
+    bottom: 70,
+    left: 20,
+    animation-duration: 9.2
+  ),
+  (
+    bottom: 75,
+    left: 45,
+    animation-duration: 12.2
+  ),
+  (
+    bottom: 50,
+    left: 50,
+    animation-duration: 9.8
+  ),
+  (
+    bottom: 68,
+    left: 34,
+    animation-duration: 10.6
+  )
+);
+
+// Why us
+
+$why-us-icon-list-border-color: $gray-400 !default;
+
+// Cutout components
+
+$cutout-color: var(--#{$prefix}body-bg);
+
+// [ PRICING ]
+
+$price-table-accent-bg-color: $border-color !default; //darken($body-bg, 4%) !default !default;
+$price-value-font-size: $font-size-large !default;
+$price-table-body-bg: $price-table-accent-bg-color !default;
+$price-border-color: $border-color !default;
+$price-include-color: #6aa74c !default;
+$price-strike-color: #767676 !default;
+
+$pricing-slider-selection-color: $color-primary !default;
+$pricing-slider-handle-bg-color: $white !default;
+
+// table
+$price-plan-thead-bg-color: $color-light !default;
+$price-plan-thead-color: $color-primary !default;
+$price-plan-thead-border-color: $gray-400 !default;
+$price-plan-ribbon-bg-color: $gray-300 !default;
+$price-plan-ribbon-color: $white !default;
+
+// Testimonials
+$singl-testimonial-img-decorated-bg-color: $color-primary !default;
+
+$singl-testimonial-reviews-nav-color: $body-color !default;
+$singl-testimonial-reviews-nav-bg-color: $color-light !default;
+$singl-testimonial-reviews-nav-color-hover: $white !default;
+$singl-testimonial-reviews-nav-bg-color-hover: $color-primary !default;
+
+// Stripes Payment
+
+$color-stripe-1: $color-primary !default;
+$color-stripe-1-gradient-start: #05d5ff !default;
+$color-stripe-1-gradient-end: #a6ffcb !default;
+$color-stripe-2: #4553ff !default;
+$color-stripe-3: #4f40ff !default;
+$color-stripe-4: #0dcfff !default;
+$color-stripe-5: #1fa2ff !default;
+
+// Integrations Header
+
+$integrations-dots-bg-color: var(--#{$prefix}tertiary-bg) !default;
+$integrations-square3-bg-color: $color-primary !default;
+$integrations-circle1-bg-color: $color-warning !default;
+
+// How it Works
+
+$hiw-circle-bg-color: var(--#{$prefix}secondary-bg) !default;
+$hiw-ring-bg-color: var(--#{$prefix}secondary-bg) !default;

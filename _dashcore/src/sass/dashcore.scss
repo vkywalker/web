@@ -1,0 +1,84 @@
+/*!
+ * Dashcore 4.0 (https://themeforest.net/user/5studios)
+ * Sass & Startup HTML Template
+ * Main SCSS file
+ * Copyright 2024 The 5studios.net team (https://5studios.net)
+ *
+ * [ TABLE OF CONTENTS ]
+ *
+ * 1. RESET STYLES
+ * 2. NAVIGATION
+ *   2.1 - Navigation base styles
+ *   2.2 - Pills
+ * 3. FORMS
+ *   3.1 - Form
+ *   3.2 - Buttons
+ * 4. UTILITIES
+ *   4.1 - Background
+ *   4.2 - Border
+ *   4.3 - Devices
+ *   4.4 - Lists
+ *   4.5 - Misc
+ *   4.6 - Overlay
+ *   4.7 - Position
+ *   4.8 - Responsive
+ *   4.9 - Spacing
+ *   4.10 - Text
+ *   4.11 - Type
+ * 5. GENERAL CONTENT STYLES
+ *   5.1 - Page Loader
+ *   5.2 - Mockup
+ *   5.3 - Icons
+ * 6. SECTIONS
+ *   6.1 - General Styles
+ *   6.2 - Testimonials
+ *   6.3 - Footer
+ * 7. PRICING
+ *   7.1 - General styles
+ *   7.2 - Pricing heading
+ * 8. PAGE HEADING
+ * 9. CUSTOM
+ */
+
+// Bootstrap functions, must be included before overriden any bootstrap variable
+// https://getbootstrap.com/docs/5.3/customize/sass/#variable-defaults
+@import "bootstrap/scss/functions";
+
+// User variables, will overwrite any predefined variable
+@import "user/variables";
+
+// For override any Bootstrap or third-party variable
+@import "shared/override";
+@import "theme/override";
+
+// Bootstrap custom core styles
+// Comment or uncomment any styles you might want to use
+// You should revisit this file in case you upgrade Bootstrap version and copy the main bootstrap.scss content
+@import "bs";
+
+// Importing of any local variable|function|mixins that should be globally accessed
+@import "shared/import";
+@import "theme/import";
+
+// Utilities is a special case, it should be placed after all variables have been loaded
+// because we add multiple entries to the $utilities map it will merge with the Bootstrap $utilities
+// and also will use any custom or override variable
+@import "theme/utilities";
+
+// The local theme
+@import "shared/styles";
+@import "theme/styles";
+
+// User custom styles
+@import "user/styles";
+
+/*
+ * SAFELY REMOVE FROM HERE
+ * You can safely remove the references to any of the following files if you're not using any style from them
+*/
+
+// This file has the styles applied in index.html
+@import "theme/index";
+
+// This file has the styles applied in 'Blocks' demo files
+@import "demos";

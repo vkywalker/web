@@ -1,0 +1,9 @@
+// TODO: use a map for the edge backgrounds
+$edge-bg: map-merge(
+    $theme-colors,
+    (
+      "black": $black,
+      "white": $white,
+      "body": $body-bg
+    )
+) !default

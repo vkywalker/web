@@ -1,0 +1,119 @@
+/* 2.1 Background ======================================================= */
+.image-background {
+  position: relative;
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &.cover {
+    background-size: cover;
+  }
+
+  &.contain {
+    background-size: contain;
+  }
+
+  &.left-bottom {
+    background-position: 0 bottom;
+  }
+
+  &.center-top {
+    background-position: center top;
+  }
+
+  &.center-bottom {
+    background-position: center bottom;
+  }
+
+  &.p100-top {
+    background-position: 100% top;
+  }
+
+  &.p100-bottom {
+    background-position: 100% bottom;
+  }
+}
+
+.parallax {
+  position: static;
+
+  &,
+  &.blurred:before {
+    background-attachment: fixed;
+  }
+
+  &.blurred:before {
+    position: absolute;
+  }
+}
+
+//$theme-colors
+@each $i, $color in $theme-colors {
+  $from-color: lighten($color, 0.7);
+
+  .bg-#{$i} {
+    &.edge {
+      &.bottom-left {
+        @include angled-edge("outside bottom", "lower left", $color, 250);
+      }
+
+      &.bottom-right {
+        @include angled-edge("outside bottom", "lower right", $color, 250);
+      }
+
+      &.top-left {
+        @include angled-edge("outside top", "upper left", $color, 250);
+      }
+
+      &.top-right {
+        @include angled-edge("outside top", "upper right", $color, 250);
+      }
+    }
+  }
+}
+
+// Used to allow the edge o be available on the following classes
+.bg-body {
+  &.edge {
+    &:before, &:after {
+      background-color: rgba(var(--#{$prefix}body-bg-rgb), var(--#{$prefix}bg-opacity));
+    }
+
+    &.top-left {
+      @include angled-edge("outside top", "upper left", $body-bg, 250, null, true);
+    }
+
+    &.bottom-right {
+      @include angled-edge("outside bottom", "lower right", $body-bg, 250, null, true);
+    }
+  }
+}
+
+.bg-body-secondary {
+  &.edge {
+    &:before, &:after {
+      background-color: rgba(var(--#{$prefix}secondary-bg-rgb), var(--#{$prefix}bg-opacity));
+    }
+
+    &.top-left {
+      @include angled-edge("outside top", "upper left", $body-secondary-bg, 250, null, true);
+    }
+
+    &.bottom-right {
+      @include angled-edge("outside bottom", "lower right", $body-secondary-bg, 250, null, true);
+    }
+  }
+}
+
+.bg-body-tertiary {
+  &.edge {
+    &:before, &:after {
+      background-color: rgba(var(--#{$prefix}tertiary-bg-rgb), var(--#{$prefix}bg-opacity));
+    }
+
+    &.top-left {
+      @include angled-edge("outside top", "upper left", $body-tertiary-bg, 250, null, true);
+    }
+  }
+}
+// end edge

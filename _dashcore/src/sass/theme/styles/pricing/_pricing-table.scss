@@ -1,0 +1,110 @@
+.pricing-element {
+  .pricing-table-tabs {
+    width: 100%;
+
+    label {
+      width: 33.33%;
+      padding: 12px 6px;
+      @include text-truncate();
+    }
+  }
+
+  .pricing-details {
+    margin-top: 0;
+  }
+
+  table {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    th, td {
+      padding: 10px 15px;
+      vertical-align: middle !important;
+      //border: 1px solid $table-border-color;
+    }
+
+    th {
+      font-weight: normal;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    thead {
+      th {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: var(--#{$prefix}secondary-bg);
+        border-top-width: var(--#{$prefix}border-width);
+      }
+    }
+
+    tbody {
+      &.pricing-details {
+        th {
+          background-color: transparent;
+        }
+      }
+    }
+
+    tfoot {
+      font-size: 0.8em;
+
+      td {
+        border: 0;
+      }
+    }
+
+    .pricing-prev {
+      float: left;
+    }
+
+    .pricing-next {
+      float: right;
+    }
+
+    .visible-cell {
+      transition: all 0.3s;
+    }
+  }
+
+  .show-annually {
+    display: none;
+  }
+
+  .yearly-display {
+    .show-annually {
+      display: block;
+    }
+  }
+
+  @include media-breakpoint-down($grid-float-breakpoint-max) {
+    table {
+      .expand-mobile {
+        th, td {
+          display: none;
+        }
+      }
+
+      td[headers*='ph-'] {
+        display: none;
+      }
+
+      tbody {
+        th {
+          width: 0;
+        }
+      }
+    }
+  }
+}
+
+.visible-cell {
+  display: table-cell!important;
+}
+
+.visible-block, .visible-cell {
+  visibility: visible!important;
+}
