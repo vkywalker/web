@@ -1,0 +1,446 @@
+<!-- Page Navbar -->
+<nav class="st-nav navbar navbar-expand-lg fixed-top" id="main-nav">
+    <div class="container">
+        <ul class="st-nav-menu nav navbar-nav">
+            <li class="st-nav-section nav-item">
+                <a href="../" class="link-logo navbar-brand nav-link">
+                   <span class="logo-wrapper"></span>
+                </a>
+            </li>
+
+            <!-- Primary navigation elements -->
+            <li class="st-nav-section st-nav-primary  nav-item">
+                <a class="st-root-link item-products st-has-dropdown nav-link" data-dropdown="pages"> Que es Audit? </a>
+                <a class="st-root-link item-products st-has-dropdown nav-link" data-dropdown="blocks"> Tarifas </a>
+                <a class="st-root-link item-products st-has-dropdown nav-link" data-dropdown="blocks"> Nuestro compromiso </a>
+                <a class="st-root-link item-products st-has-dropdown nav-link" data-dropdown="blocks"> Solicita demo </a>
+                {#  <a class="st-root-link item-company st-has-dropdown nav-link" data-dropdown="components"> Subscribete </a>
+                <a class="st-root-link item-products st-has-dropdown nav-link" data-dropdown="landings"> Landings </a> #}
+            </li>
+
+            <!-- Secondary navigation elements -->
+            <li class="st-nav-section st-nav-secondary nav-item align-items-center">
+                <!-- Navigation buttons -->
+                <a class="btn btn-primary shadow-primary" href="../auth/login.html" target="_blank">
+                    <i class="fas fa-sign-in-alt d-none d-md-inline me-md-0 me-lg-2"></i>
+                    <span class="d-md-none d-lg-inline">Login</span>
+                </a>
+            </li>
+
+            <!-- Mobile navigation modal -->
+            <li class="st-nav-section st-nav-mobile nav-item">
+                <button class="st-root-link navbar-toggler" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="st-popup">
+                    <div class="st-popup-container bg-body-tertiary">
+                        <a class="st-popup-close-button">Close</a>
+                        <div class="st-dropdown-content-group">
+                            <h4 class="text-uppercase">Contenido</h4>
+                            <a class="text-primary" href="../about.html">
+                                <i class="far fa-building icon"></i> Que es Audit?
+                            </a>
+                            <a class="text-success" href="../contact.html">
+                                <i class="far fa-envelope icon"></i> Tarifas
+                            </a>
+                            <a class="text-warning" href="../pricing.html">
+                                <i class="fas fa-hand-holding-usd icon"></i> Nuestro compromiso
+                            </a>
+                            <a class="text-info" href="../faqs.html">
+                                <i class="far fa-question-circle icon"></i> Solicita demo
+                            </a>
+                        </div>
+                        {# <div class="st-dropdown-content-group border-top">
+                            <h4 class="text-uppercase fw-bold">Components</h4>
+                            <div class="row">
+                                <div class="col me-4">
+                                    <a href="../components/alert.html">Alerts</a>
+                                    <a href="../components/badge.html">Badges</a>
+                                    <a href="../components/button.html">Buttons</a>
+                                    <a href="../components/color.html">Colors</a>
+                                    <a href="../components/accordion.html">Accordion</a>
+                                </div>
+                                <div class="col me-4">
+                                    <a href="../components/overlay.html">Overlay</a>
+                                    <a href="../components/progress.html">Progress</a>
+                                    <a href="../components/lightbox.html">Lightbox</a>
+                                    <a href="../components/tab.html">Tabs</a>
+                                    <a href="../components/tables.html">Tables</a>
+                                    <a href="../components/typography.html">Typography</a>
+                                </div>
+                            </div>
+                        </div> #}
+                        <div class="st-dropdown-content-group border-top">
+                            <a href="../auth/login.html">Sign in <i class="fas fa-long-arrow-right ms-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="st-dropdown-root">
+        <div class="st-dropdown-bg">
+            <div class="st-alt-bg"></div>
+        </div>
+        <div class="st-dropdown-arrow"></div>
+        <div class="st-dropdown-container">
+            <div class="st-dropdown-section" data-dropdown="pages">
+                <div class="st-dropdown-content">
+                    <div class="st-dropdown-content-group">
+                        <div class="mb-4">
+                            <h4 class="text-nowrap mb-0 text-gradient text-gradient-success">
+                                <span class="fw-bold">Useful pages</span> you'll need
+                            </h4>
+                            <p class="text-muted mt-0">Get a complete design stack</p>
+                        </div>
+                        <div class="row flex-nowrap g-4">
+                            <div class="col me-4">
+                                <h6 class="text-uppercase fw-bold small ps-2">Error</h6>
+                                <a class="dropdown-item" href="../403.html">403 Error</a>
+                                <a class="dropdown-item" href="../404.html">404 Error</a>
+                                <a class="dropdown-item" href="../500.html">500 Error</a>
+                            </div>
+                            <div class="col me-4">
+                                <h6 class="text-uppercase fw-bold small ps-2">User</h6>
+                                <a class="dropdown-item" href="../auth/login.html">Login</a>
+                                <a class="dropdown-item" href="../auth/register.html">Register</a>
+                                <a class="dropdown-item" href="../auth/forgot-password.html">Forgot</a>
+                            </div>
+                            <div class="col me-4">
+                                <h6 class="text-uppercase fw-bold small ps-2">Extra</h6>
+                                <a class="dropdown-item" href="../pricing.html">Pricing</a>
+                                <a class="dropdown-item" href="../terms.html">Terms</a>
+                                <a class="dropdown-item" href="../faqs.html">FAQ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="st-dropdown-content-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a class="dropdown-item fw-bold" href="../about.html">
+                                    <i class="far fa-building icon"></i> About
+                                </a>
+                                <a class="dropdown-item fw-bold" href="../contact.html">
+                                    <i class="far fa-envelope icon"></i> Contact
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="dropdown-item fw-bold" href="../pricing.html">
+                                    <i class="fa fa-money-bills icon"></i> Pricing
+                                </a>
+                                <a class="dropdown-item fw-bold" href="../pricing-table.html">
+                                    <i class="fas fa-hand-holding-usd icon"></i> Pricing Table
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="st-dropdown-section" data-dropdown="blocks">
+                <div class="st-dropdown-content">
+                    <div class="st-dropdown-content-group">
+                        <div class="row flex-nowrap flex-nowrap g-4">
+                            <div class="col me-4">
+                                <a class="dropdown-item" href="../blocks/call-to-action.html">Call to actions</a>
+                                <a class="dropdown-item" href="../blocks/contact.html">Contact</a>
+                                <a class="dropdown-item" href="../blocks/counter.html">Counters</a>
+                                <a class="dropdown-item" href="../blocks/faqs.html">FAQs</a>
+                            </div>
+                            <div class="col me-4">
+                                <a class="dropdown-item" href="../blocks/footer.html">Footers</a>
+                                <a class="dropdown-item" href="../blocks/form.html">Forms</a>
+                                <a class="dropdown-item" href="../blocks/navbar.html">Navbar</a>
+                                <a class="dropdown-item" href="../blocks/navigation.html">Navigation</a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="../blocks/pricing.html">Pricing</a>
+                                <a class="dropdown-item" href="../blocks/slider.html">Sliders</a>
+                                <a class="dropdown-item" href="../blocks/team.html">Team</a>
+                                <a class="dropdown-item" href="../blocks/testimonial.html">Testimonials</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="st-dropdown-content-group">
+                        <h6 class="link-title text-uppercase">
+                            <i class="fas fa-long-arrow-right me-3"></i> Coming soon
+                        </h6>
+                        <div class="ms-5">
+                            <span class="dropdown-item text-muted">Dividers</span>
+                            <span class="dropdown-item text-muted">Gallery</span>
+                            <span class="dropdown-item text-muted">Screenshots</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="st-dropdown-section" data-dropdown="components">
+                <div class="st-dropdown-content">
+                    <div class="st-dropdown-content-group">
+                        <a class="dropdown-item mb-4" href="../components/accordion.html">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="bg-warning-subtle text-warning p-3 rounded-2 me-lg-3 me-md-auto">
+                                    <i data-feather="align-justify" width="24" height="24" class="stroke-warning"></i>
+                                </div>
+                                <div>
+                                    <h5 class="link-title m-0">Accordion</h5>
+                                    <p class="m-0 text-muted">Useful accordion elements</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item mb-4" href="../components/color.html">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="bg-primary-subtle text-primary p-3 rounded-2 me-lg-3 me-md-auto">
+                                    <i data-feather="image" width="24" height="24" class="stroke-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="link-title m-0">Colors</h5>
+                                    <p class="m-0 text-muted">Get to know DashCore color options</p>
+                                </div>
+                            </div>
+                        </a>
+                        <h6 class="text-uppercase fw-bold small">Huge components list</h6>
+                        <div class="row flex-nowrap">
+                            <div class="col">
+                                <a class="dropdown-item" href="../components/alert.html">Alerts</a>
+                                <a class="dropdown-item" href="../components/badge.html">Badges</a>
+                                <a class="dropdown-item" href="../components/button.html">Buttons</a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="../components/overlay.html">Overlay</a>
+                                <a class="dropdown-item" href="../components/progress.html">Progress</a>
+                                <a class="dropdown-item" href="../components/lightbox.html">Lightbox</a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="../components/tab.html">Tabs</a>
+                                <a class="dropdown-item" href="../components/tables.html">Tables</a>
+                                <a class="dropdown-item" href="../components/typography.html">Typography</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="st-dropdown-content-group">
+              <span class="dropdown-item d-flex align-items-center text-muted"> Wizard <i class="fas fa-ban ms-auto"></i>
+              </span>
+                        <span class="dropdown-item d-flex align-items-center text-muted"> Timeline <i class="fas fa-ban ms-auto"></i>
+              </span>
+                        <span class="dropdown-item d-flex align-items-center text-muted"> Process <i class="fas fa-ban ms-auto"></i>
+              </span>
+                    </div>
+                </div>
+            </div>
+            <div class="st-dropdown-section" data-dropdown="landings">
+                <div class="st-dropdown-content">
+                    <div class="st-dropdown-content-group">
+                        <div class="content" style="max-width:720px">
+                            <div class="row">
+                                <div class="col-md-4 d-flex flex-column">
+                                    <h4 class="fw-bold text-gradient text-gradient-success m-0">Beautiful <span class="d-block">Landing Pages</span>
+                                    </h4>
+                                    <p class="m-0 text-muted">Carefully designed Landing Pages</p>
+                                    <div class="position-relative mt-auto d-flex justify-content-end">
+                                        <div class="swiper-button sw-nav sw-nav-prev rounded-circle shadow p-2 me-3">
+                                            <i data-feather="arrow-left"></i>
+                                        </div>
+                                        <div class="swiper-button sw-nav sw-nav-next rounded-circle shadow p-2">
+                                            <i data-feather="arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="swiper" data-sw-loop="true" data-sw-nav-arrows=".sw-nav" data-sw-allow-move="false">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="../app-landing.html">
+                                                    <div class="card shadow border-0 overflow-hidden">
+                                                        <figure class="preview-overlay m-0">
+                                                            <div class="preview-pane">
+                                                                <div class="preview-page" data-simplebar="">
+                                                                    <img class="card-img-bottom img-responsive" src="../img/demo/screen/01-app-landing.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="../app-landing-2.html">
+                                                    <div class="card shadow border-0 overflow-hidden">
+                                                        <figure class="preview-overlay m-0">
+                                                            <div class="preview-pane">
+                                                                <div class="preview-page" data-simplebar="">
+                                                                    <img class="card-img-bottom img-responsive" src="../img/demo/screen/02-app-landing-2.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="../business.html">
+                                                    <div class="card shadow border-0 overflow-hidden">
+                                                        <figure class="preview-overlay m-0">
+                                                            <div class="preview-pane">
+                                                                <div class="preview-page" data-simplebar="">
+                                                                    <img class="card-img-bottom img-responsive" src="../img/demo/screen/03-business.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="../corporate.html">
+                                                    <div class="card shadow border-0 overflow-hidden">
+                                                        <figure class="preview-overlay m-0">
+                                                            <div class="preview-pane">
+                                                                <div class="preview-page" data-simplebar="">
+                                                                    <img class="card-img-bottom img-responsive" src="../img/demo/screen/04-corporate.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="../developers.html">
+                                                    <div class="card shadow border-0 overflow-hidden">
+                                                        <figure class="preview-overlay m-0">
+                                                            <div class="preview-pane">
+                                                                <div class="preview-page" data-simplebar="">
+                                                                    <img class="card-img-bottom img-responsive" src="../img/demo/screen/05-developers.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="../integration.html">
+                                                    <div class="card shadow border-0 overflow-hidden">
+                                                        <figure class="preview-overlay m-0">
+                                                            <div class="preview-pane">
+                                                                <div class="preview-page" data-simplebar="">
+                                                                    <img class="card-img-bottom img-responsive" src="../img/demo/screen/06-integration.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="../marketing.html">
+                                                    <div class="card shadow border-0 overflow-hidden">
+                                                        <figure class="preview-overlay m-0">
+                                                            <div class="preview-pane">
+                                                                <div class="preview-page" data-simplebar="">
+                                                                    <img class="card-img-bottom img-responsive" src="../img/demo/screen/07-marketing.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="../online-payments.html">
+                                                    <div class="card shadow border-0 overflow-hidden">
+                                                        <figure class="preview-overlay m-0">
+                                                            <div class="preview-pane">
+                                                                <div class="preview-page" data-simplebar="">
+                                                                    <img class="card-img-bottom img-responsive" src="../img/demo/screen/08-online-payments.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="../payment-services.html">
+                                                    <div class="card shadow border-0 overflow-hidden">
+                                                        <figure class="preview-overlay m-0">
+                                                            <div class="preview-pane">
+                                                                <div class="preview-page" data-simplebar="">
+                                                                    <img class="card-img-bottom img-responsive" src="../img/demo/screen/09-payment-services.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="../saas.html">
+                                                    <div class="card shadow border-0 overflow-hidden">
+                                                        <figure class="preview-overlay m-0">
+                                                            <div class="preview-pane">
+                                                                <div class="preview-page" data-simplebar="">
+                                                                    <img class="card-img-bottom img-responsive" src="../img/demo/screen/10-saas.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="../smart-business.html">
+                                                    <div class="card shadow border-0 overflow-hidden">
+                                                        <figure class="preview-overlay m-0">
+                                                            <div class="preview-pane">
+                                                                <div class="preview-page" data-simplebar="">
+                                                                    <img class="card-img-bottom img-responsive" src="../img/demo/screen/11-smart-business.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="../startup.html">
+                                                    <div class="card shadow border-0 overflow-hidden">
+                                                        <figure class="preview-overlay m-0">
+                                                            <div class="preview-pane">
+                                                                <div class="preview-page" data-simplebar="">
+                                                                    <img class="card-img-bottom img-responsive" src="../img/demo/screen/12-startup.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="st-dropdown-content-group">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="text-uppercase ps-2 fw-bold text-gradient text-gradient-primary">Blog Pages</p>
+                                <a class="dropdown-item fw-bold" href="../blog/list-view.html">
+                                    <i class="fa fa-list me-2"></i> List View
+                                </a>
+                                <a class="dropdown-item fw-bold" href="../blog/">
+                                    <i class="fa fa-table-cells me-2"></i> Grid View
+                                </a>
+                                <a class="dropdown-item fw-bold" href="../blog/grid-view-2.html">
+                                    <i class="fa fa-table-cells-large me-2"></i> Grid View 2
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="text-uppercase ps-2 fw-bold text-gradient text-gradient-primary">With Sidebar</p>
+                                <a class="dropdown-item fw-bold" href="../blog/list-sidebar.html"> List View with Sidebar </a>
+                                <a class="dropdown-item fw-bold" href="../blog/grid-sidebar.html"> Grid View with Sidebar </a>
+                                <a class="dropdown-item fw-bold" href="../blog/post-sidebar.html"> Single Post with Sidebar </a>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="text-uppercase ps-2 fw-bold text-gradient text-gradient-primary">Other Pages</p>
+                                <a class="dropdown-item fw-bold" href="../blog/post.html"> Single Post </a>
+                                <a class="dropdown-item fw-bold" href="../blog/category.html"> Categories </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

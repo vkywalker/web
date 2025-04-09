@@ -23,3 +23,8 @@
 /public/assets/
 /assets/vendor/
 ###< symfony/asset-mapper ###
+
+###> dashcore template ###
+/_dashcore/public/
+/_dashcore/node_modules/
+###< dashcore template ###

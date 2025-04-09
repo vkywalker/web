@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block layout %}
+    {% include "_theme/partials/_page_loading.html.twig" %}
+    {% include "_theme/partials/_navigation.html.twig" %}
+
+    <main class="position-relative overflow-hidden">
+        {% block content %}{% endblock %}
+    </main>
+    {% include "_theme/partials/_footer.html.twig" %}
+    {% include "_theme/partials/_back_to_top.html.twig" %}
+{% endblock %}
